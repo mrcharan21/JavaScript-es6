@@ -1,0 +1,66 @@
+Question 1: What are the different types of operators in JavaScript? Explain with examples.
+Answer:
+In JavaScript, operators are special symbols that perform operations on variables and values. The different types of operators include:
+1. Arithmetic operators: These operators are used to perform mathematical calculations. Examples include:
+   - Addition (+): Adds two numbers.
+   - Subtraction (-): Subtracts one number from another.
+   - Multiplication (*): Multiplies two numbers.
+   - Division (/): Divides one number by another.
+   - Modulus (%): Returns the remainder of a division operation.
+
+
+2. Assignment operators: These operators are used to assign values to variables. Examples include:
+   - Assignment (=): Assigns a value to a variable.
+   - Addition assignment (+=): Adds a value to a variable and assigns the result.
+   - Subtraction assignment (-=): Subtracts a value from a variable and assigns the result.
+    - Multiplication assignment (*=): Multiplies a variable by a value and assigns the result.
+    - Division assignment (/=): Divides a variable by a value and assigns the result.
+    - Modulus assignment (%=): Takes the modulus of a variable with a value and assigns the result.
+
+
+3. Comparison operators: These operators are used to compare two values. Examples include:
+   - Equal to (==): Checks if two values are equal.
+   - Strict equal to (===): Checks if two values are equal and of the same type.
+   - Not equal to (!=): Checks if two values are not equal.
+   - Greater than (>): Checks if one value is greater than another.
+    - Less than (<): Checks if one value is less than another.
+    - Greater than or equal to (>=): Checks if one value is greater than or equal to another.
+    - Less than or equal to (<=): Checks if one value is less than or equal to another.
+
+
+4. Logical operators: These operators are used to perform logical operations. Examples include:
+   - Logical AND (&&): Returns true if both operands are true.
+   - Logical OR (||): Returns true if at least one operand is true.
+   - Logical NOT (!): Reverses the logical state of its operand.
+
+
+5. Bitwise operators: These operators perform operations on binary representations of numbers. Examples include:
+   - Bitwise AND (&): Performs a bitwise AND operation.
+   - Bitwise OR (|): Performs a bitwise OR operation.
+   - Bitwise XOR (^): Performs a bitwise XOR operation.
+   - Bitwise NOT (~): Inverts the bits of its operand.
+   - Left shift (<<): Shifts bits to the left, filling with zeros.
+   - Right shift (>>): Shifts bits to the right.
+
+
+Question 2: What is the difference between == and === in JavaScript? 
+Answer:
+In JavaScript, `==` and `===` are both comparison operators, but they differ in how they compare values:
+
+a) == (Double Equals)
+- Compares only values, not data types.
+- performs type conversion if needed.
+
+-Example:
+5 == "5" // true (string is converted to number)
+true == 1 // true (boolean is converted to number)
+null == undefined // true (both are considered equal)
+
+
+b) === (Triple Equals)
+- Compares both value and data type.
+- No type conversion is performed.
+-Example:
+5 === "5" // false (number and string are different types)
+true === 1 // false (boolean and number are different types)
+null === undefined // false (null and undefined are different types)

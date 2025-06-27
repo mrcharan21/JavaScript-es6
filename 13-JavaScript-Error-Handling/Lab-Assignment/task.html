@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Divide by Zero Example</title>
+</head>
+<body>
+
+  <h2>Divide by Zero with Error Handling</h2>
+
+  <p id="output"></p>
+
+  <script>
+    try {
+      let numerator = 10;
+      let denominator = 0;
+
+      if (denominator === 0) {
+        // Manually throw an error
+        throw new Error("Cannot divide by zero!");
+      }
+
+      let result = numerator / denominator;
+      document.getElementById("output").textContent = "Result: " + result;
+
+    } catch (error) {
+      // Handle the error
+      document.getElementById("output").textContent = "Error: " + error.message;
+    }
+  </script>
+
+</body>
+</html>

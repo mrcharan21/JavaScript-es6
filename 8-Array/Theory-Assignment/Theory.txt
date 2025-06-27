@@ -1,0 +1,29 @@
+Question 1: What is an array in JavaScript? How do you declare and initialize an array? 
+Answer: An array is a simple variable that we can use to store multiple data in a single variable.
+It is a a collection of items that can be of any type,
+including numbers,strings,objects,functions and even other arrays.
+It is a data structure that allows us to store and manipulate a list of values.
+Arrays are zero-indexed, meaning the first element is at index 0.
+Arrays are mutable, meaning we can change their contents after they are created.
+
+
+How to declare and initialize an array:
+1. Using Square Brackets:
+let fruits = ['apple', 'banana', 'cherry'];
+
+2. Using the Array Constructor:
+let numbers = new Array(1, 2, 3, 4, 5);
+
+3. Empty Array:
+let emptyArray = [];
+
+4. Array with Mixed Types:
+let mixedArray = [1, 'two', true, { key: 'value' }, [1, 2, 3]];
+
+
+Question 2: Explain the methods push(), pop(), shift(), and unshift() used in arrays. 
+Answer: These methods are used to manipulate arrays in JavaScript:
+push(): Adds one or more elements to the end of an array and returns the new length of the array.
+pop(): Removes the last element from an array and returns that element. This method changes the length of the array.
+shift(): Removes the first element from an array and returns that element. This method changes the length of the array.
+unshift(): Adds one or more elements to the beginning of an array and returns the new length of the array.

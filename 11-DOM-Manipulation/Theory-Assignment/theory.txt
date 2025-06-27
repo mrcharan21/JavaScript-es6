@@ -1,0 +1,36 @@
+Question 1: What is the DOM (Document Object Model) in JavaScript? How does JavaScript interact with the DOM?
+Answer:
+The DOM (Document Object Model) is a programming interface for web documents. It represents the structure of a document as a tree of objects, where each object corresponds to a part of the document, such as elements, attributes, and text. JavaScript interacts with the DOM by providing methods and properties that allow developers to manipulate these objects, enabling dynamic changes to the content, structure, and style of web pages.
+
+- Access elements: JavaScript can access elements in the DOM using methods like `getElementById`, `getElementsByClassName`, and `querySelector`.
+
+- Modify elements: JavaScript can change the content and attributes of elements using properties like `innerHTML`, `textContent`, and methods like `setAttribute`.
+
+- Create and remove elements: JavaScript can create new elements using `createElement` and remove them using `removeChild` or `remove`.
+
+- Event handling: JavaScript can add event listeners to elements to respond to user interactions, such as clicks, key presses, and form submissions.
+
+-Change styles: JavaScript can modify the CSS styles of elements using the `style` property, allowing for dynamic visual changes.
+
+
+
+Question 2: Explain the methods getElementById(), getElementsByClassName(),and querySelector() used to select elements from the DOM. 
+
+Answer:
+1) getElementById():
+purpose : Selects a singel element by its id attribute.
+returns: A singel element object or null if no element with the specified id exists.
+Usage: `document.getElementById('elementId')`
+
+
+2) getElementsByClassName():
+purpose: Selects all elements with the specified class name.
+returns: A live HTMLCollection of elements with the specified class name.
+Usage: `document.getElementsByClassName('className')`
+
+
+3) querySelector():
+purpose: Selects the first element that matches a specified CSS selector.
+returns: The first matching element or null if no matching element is found.
+Usage: `document.querySelector('cssSelector')`
+

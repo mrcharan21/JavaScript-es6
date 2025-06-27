@@ -1,0 +1,71 @@
+Question 1: What is control flow in JavaScript? Explain how if and  if-else statements work withan example. 
+Answer:
+Control flow in JavaScript refers to the order in which code is executed. 
+JavaScript runs code from top to bottom, but control flow statements like if-else allow you to change this order based on conditions.
+
+a) if statement:
+An if statement runs a block of code if a condition is true.
+If the condition is false, the code will be skipped.
+Example:
+
+syntax: 
+
+if (condition) {
+    // code to execute if condition is true
+}
+
+example: 
+<script>
+    let a = 10;
+    let b = 20;
+if (a > b) {
+    console.log("a is greater than b");
+}
+</script>
+
+b) if-else statement:
+An if-else statement runs one block of code if a condition is true and if-else block runs if the conditon is false.
+Example:
+syntax:
+
+if (condition) {
+    // code to execute if condition is true
+} else {
+    // code to execute if condition is false
+}
+
+example
+
+<script>
+    let c = 30;
+    let d = 20;
+
+    if (c > d) {
+        console.log("c is greater than d" );
+    }else{
+        console.log("c is not greater than d");
+    }
+</script>
+
+
+Question 2: Describe how switch statements work in JavaScript. When should you use a switch statement instead of if-else? 
+Answer:
+The switch statement in JavaScript is used to execute one block of code among many based on the value of an expression. It is particularly useful when you have multiple conditions to check against a single variable or expression.
+The switch statement evaluates an expression and matches its value against multiple case clauses. If a match is found, the corresponding block of code is executed. If no match is found, an optional default block can be executed.
+
+
+You should use a switch statement instead of if-else when you have multiple discrete values to compare against a single expression, as it can make the code cleaner and easier to read.
+
+syntax:
+
+switch (expression) {
+    case value1:
+        // code to execute if expression matches value1
+        break;
+    case value2:
+        // code to execute if expression matches value2
+        break;
+    // more cases...
+    default:
+        // code to execute if no cases match
+}

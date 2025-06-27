@@ -1,0 +1,62 @@
+Question 1: What are functions in JavaScript? Explain the syntax for declaring and calling a function. 
+Answer:Function is a keyword to declare the function, 
+Functions in JavaScript are reusable blocks of code that perform a specific task. They can take inputs (parameters) and return outputs (values).Instead of repeating code, we can define a function once and call it multiple times.
+
+The syntax for declaring a function:
+
+function functionName(parameters) {
+    // code to be executed
+}
+
+Explain the syntax for calling a function:
+
+function : function is a keyword to declare the function.
+functionName : functionName is the name of the function.
+parameters : optional values you can pass to the function.
+{} - block of code that runs when the function is called.
+
+Example: 
+
+<script>
+    function greet(name) {
+        console.log("Hello" + name );
+    }
+</script>
+
+
+Question 2: What is the difference between a function declaration and a function expression? 
+Answer: The main difference between a function declaration and a function expression in JavaScript is how they are defined and used.
+
+Function Declaration:
+A function declaration is defined using the `function` keyword followed by the function name and parentheses. It is hoisted, meaning it can be called before it is defined in the code.
+
+Function Expression:
+A function expression is defined when a function is assigned to a variable. It is not hoisted, so it can only be called after it is defined in the code.
+
+
+Question 3: Discuss the concept of parameters and return values in functions. 
+Answer: Parameters are variables listed inside the parentheses in a function declaration. They act as placeholders for values that will be passed to the function when it is called.
+example:
+
+<script>
+    function greet(name){
+        console.log("Hello " + name);
+    }
+</script>
+
+Return values is the output that a function gives back after it finishes executing.You can use the `return` keyword to send a value from the function back to where it was called.
+
+example: 
+<script>
+    function add(a ,b){
+        return a + b;
+    }
+    let result = add(10,5);
+    console.log(result);
+</script>
+
+conclusion:
+Parameters allow you to send input into a function.
+Return values allow you to get output back from a function.
+
+Together, they make functions powerful and dynamic, helping you avoid writing the same code again and again.

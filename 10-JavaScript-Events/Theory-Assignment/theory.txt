@@ -1,0 +1,41 @@
+Question 1: What are JavaScript events? Explain the role of event listeners.
+Answer:
+JavaScript events are actions or occurrences that happen in the browser, which JavaScript can respond to.
+Examples of events :
+A use clicking a button(click)
+A web page loading (load)
+A user pressing a key (keydown)
+A form being submitted (submit)
+A mouse moving over an element (mouseover)
+
+
+Role of event listeners:
+A method that listens for an event and runs a function when that event occurs.
+An event listener is a function that waits for an event to occur on a specified element element and then executes code in response to that event.
+
+syntax:
+element.addEventListener(eventType, callbackFunction);
+
+
+
+//Question 2: How does the addEventListener() method work in JavaScript? Provide an example. 
+Answer:
+The addEventListener() method in JavaScript is used to attach an event listener to a specified element. This method allows you to listen for a specific event (like a click, keypress, etc.) and execute a callback function when that event occurs.
+The syntax for addEventListener() is as follows:
+```javascript
+element.addEventListener(eventType, callbackFunction);
+```
+Where:
+- `element` is the DOM element you want to attach the event listener to.
+- `eventType` is a string representing the type of event to listen for (e.g., 'click', 'keydown').
+- `callbackFunction` is the function that will be executed when the event occurs.
+Example:
+
+ <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const button = document.getElementById('myButton');
+            button.addEventListener('click', function() {
+                alert('Button was clicked!');
+            });
+        });
+    </script>

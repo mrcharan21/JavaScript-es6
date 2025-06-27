@@ -1,0 +1,49 @@
+Question 1: What are variables in JavaScript? How do you declare a variable using var, let,and const?
+Answer: Variables are containers for storing data values in javascript .
+
+To declare a variable in javascript , we can use var, let, or const keywords.
+a) var : var is used to re-declared and re-assign a variable and it is a function-scoped variable.
+
+b) let : let is used to re-declared but not re-assign a variable and it is a block-scoped variable.
+
+c) const : const is neither re-declared nor re-assigned and it is also a block-scoped variable.
+
+
+
+Question 2: Explain the different data types in JavaScript. Provide examples for each.
+Answer: In javascript there are two types of datatypes: primitive and non-primitive data types.
+
+a) primitive data types: 
+1. Number: Represents both integer and floating-point numbers.
+   Example: let age = 25; let price = 19.99;
+2. String: Represents a sequence of characters enclosed in single or double quotes.
+   Example: let name = "Charan"; let greeting = 'Hello, World!';
+3. Boolean: Represents a logical value, either true or false.
+   Example: let isActive = true; let isLoggedIn = false;
+4. Undefined: Represents a variable that has been declared  but not assigned a value.
+   Example: let x; // x is undefined
+5. Null: Represents an intentional absence of any object value.
+   Example: let emptyValue = null; // emptyValue is explicitly set to null
+6. Symbol: Represents a unique and immutable value, often used as object property keys.
+   Example: let uniqueId = Symbol('id'); // uniqueId is a unique symbol
+7. BigInt: Represents integers with arbitrary precision, useful for very large numbers.
+   Example: let bigNumber = 1234567890123456789012345678901234567890n; // bigNumber is a BigInt
+
+b) non-primitive data types:
+
+1. Object: Represents a collection of key-value pairs, where keys are strings (or Symbols) and values can be of any data type.
+   Example: let person = { name: "Charan", age: 25, isActive: true };
+2. Array: Represents an ordered collection of values, which can be of any data type, including other arrays or objects.
+    Example: let numbers = [1, 2, 3, 4, 5]; let mixedArray = [1, "two", true, { key: "value" }];
+
+
+Question 3: What is the difference between undefined and null in JavaScript? 
+Answer: In JavaScript, both `undefined` and `null` represent the absence of a value, but they are used in different contexts and have distinct meanings:
+
+1. `undefined` is a type itself (undefined) and is the default value of uninitialized variables. It indicates that a variable has been declared but has not yet been assigned a value.
+   Example: let x; // x is declared but not initialized, so its value is undefined
+
+2. `null` is an object type and represents an intentional absence of any object value. It is often used to indicate that a variable should have no value.
+   Example: let y = null; // y is explicitly set to null, indicating no value
+
+In summary, use `undefined` when a variable is declared but not initialized, and use `null` when you want to intentionally indicate the absence of a value.
