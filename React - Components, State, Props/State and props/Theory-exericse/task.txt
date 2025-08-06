@@ -1,0 +1,35 @@
+Question 1: What are props in React.js? How are props different from state? 
+Answer:Props (short for properties) are read-only attributes used to pass data from one component to another, usually from a parent to a child component in React.
+
+They help make components dynamic and reusable by customizing the content they render.
+
+Props (short for properties) are used to pass data from a parent component to a child component. They are read-only and cannot be modified by the receiving component.
+
+State, on the other hand, is used to manage local data within a component. It is mutable and can be updated using setState (in class components) or useState (in functional components).
+
+--> In short:
+
+Props are for external, read-only data passed to a component.
+
+State is for internal, dynamic data managed by the component itself.
+
+
+
+Question 2: Explain the concept of state in React and how it is used to manage component data. 
+Answer:State is a built-in object in React used to store dynamic data and control the behavior of a component.
+It represents data that can change over time, usually due to user interactions, API responses, or other events.
+
+Whenever the state changes, React re-renders the component to reflect the updated UI.
+
+
+
+Question 3: Why is this.setState() used in class components, and how does it work?
+Answer:n class components, this.setState() is used to update the state and re-render the component.
+It ensures the UI always reflects the latest data.
+You should not change state directly, because that won't trigger a re-render.
+setState() works asynchronously and merges the new state with the old one.
+
+"Set the state,React updates the plate"
+--Set the state" → You call this.setState() to change the component's data.
+
+"React updates the plate" → React automatically re-renders the UI (like a plate of content) with the new data.

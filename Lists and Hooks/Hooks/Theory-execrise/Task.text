@@ -1,0 +1,70 @@
+Question 1: What are React Hooks? How do useState() and useEffect() work in functional components?
+Answer:
+React Hooks are built in functions that let you use state and lifecycle features in functional components 
+Hooks were introduced in React v16.8 to replace class components patterns
+
+useState():
+Allows you to declare and update state inside a functional components.
+eg: const [count, setCount] = useState(0);
+
+useEffect():
+Runs side effects (eg: APIcalls, Dom updates, timers).
+
+eg:
+useEffect(() => {
+    console.log('component mounted');
+}, []);
+
+
+Question 2: What problems did hooks solve in React development? Why are hooks important?
+Answer:
+Hooks solved these key problems:
+1. Code Reusability : Reused logic without HOCs or render props 
+2. State in functional Components: Before hooks, only class components had state.
+3.Avoid Class Confusion: Many devs found 'this'  Confusion.
+
+Hooks made code simpler, modular and allow better state handling in function components.
+
+Question 3: What is useReducer? How is it used in React apps?
+Answer:
+useReducer is a hook used for more complex state logic.
+
+It's like useState but suitable for multiple state transitions.
+
+Question 4: What is the purpose of useCallback & useMemo Hooks?
+Answer:
+-useCallback: Memoizes a function to avoid re-creating it on every render.
+-useMemo: Memoizes a computed value to avoid recalculating on every render.
+
+Used to :
+-Improve performance.
+-Avoid unnecessary re-renders or re-calculations.
+
+
+Question 5: What’s the Difference between useCallback & useMemo?
+-useCallback and use Memo are Hooks 
+-useCallback is a function 
+-useCallback is returns a function 
+-useCallback use when we want to avoid re-creating a function
+
+-useMemo is Memoizes a value
+-useMemo is returns a Cached value 
+-useMemo use when we want to avoid expensive recalculations.
+
+Question 6: What is useRef? How does it work in a React app?
+Answer:
+useRef() returns a mutable ref object that persists across renders.
+Often used to :
+    -Access Dom elements directly.
+    -Store mutable values(not for rendering)
+
+eg: const inputRef = useRef(null);
+<input ref={inputRef} />
+
+--we can use inputRef.current.focus() to focus the input box.
+
+
+
+
+
+

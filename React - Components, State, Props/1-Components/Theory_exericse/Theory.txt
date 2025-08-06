@@ -1,0 +1,65 @@
+Question 1: What are components in React? Explain the difference between functional components and class components. 
+Answer:In React, a component is a resuable and independent piece if code that represents a part of the UI.
+Components help break down the UI into smaller,manageable pieces.
+Each component can have its own logic,data (state),and presentation(JSX).
+
+
+types of components in React.
+1.Functional components
+2.Class Components
+
+1.Functional components
+
+a)These are Javascript functions that return JSX.
+b)They are simpler and cleaner 
+c)With React Hooks, functional components can also manage state and side effects.
+d)No need to use this keyword.
+
+example: function Welcome(props) {
+    return <h1>Hello ,{props.name}</h1>
+}
+
+ex2:
+const Welcome = ({ name }) => <h1>Hello, {name}</h1>;
+
+
+2.Class Components
+a)These use ES6 class syntax
+b)They extend from React.component
+c)Can manage state,use life cycle methods and more
+d)Require this keyword to access props and states
+
+example:
+class Welcome extends React.component {
+    render() {
+        return <h2>Hello, {this.props.name}</h2>
+    }
+}
+
+
+
+Question 2: How do you pass data to a component using props? 
+Answer:
+In React, you pass data to a component using props (short for "properties"). Props are custom attributes that you add to a component when you use it. The receiving component can then access these values via its props object.
+
+Example:
+function Welcome(props) {
+    return <h1>Hello, {props.name}</h1>;
+}
+
+<Welcome name="Charan" />
+
+In this example, "name" is a prop passed to the Welcome component, and its value ("Charan") is accessed inside the component using props.name.
+
+
+
+Question 3: What is the role of render() in class components? 
+Answer:In React class componets, the render() method is required and plays a central role.
+It is used to describe what the UI should look like
+
+Main Role of render() method
+-It returns JSX,Which React uses to create the UI elements
+-React calls this method every time the component needs to update or re-render.
+such as 
+-When props or state change.
+-When the component is first mounted.
